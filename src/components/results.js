@@ -9,6 +9,7 @@ import * as actions from '../actions';
 class Results extends Component {
 
     handleSearchBarSubmit(query) {
+
         this.props.fetchPostsWithQuery(query);
     }
 
