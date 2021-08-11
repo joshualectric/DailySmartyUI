@@ -12,7 +12,7 @@ import * as actions from '../actions';
 class Home extends Component {
 
   handleSearchBarSubmit(query) {
-      this.posts.fetchPostsWithQuery(query, () => {
+      this.props.fetchPostsWithQuery(query, () => {
         this.props.history.push('/results');
       });
       
